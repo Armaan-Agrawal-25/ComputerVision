@@ -1,0 +1,66 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/*Styling for canvas*/
+canvas {
+  display: block;
+  padding: 100px;
+  margin-left: 300px;
+  padding-left: 400;
+}
+
+/*Sets background color of app*/
+body {
+  background-color: #FF4040;
+}
+
+/*Styling for different types of text*/
+h1{
+  font-family: sans-serif;
+  font-style: bold;
+  color: white;
+  text-align: center
+}
+
+/*centers an image*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*class with specific properties for certain images*/
+.image1 {
+  border-style: solid;
+  border-color: white;
+  border-radius: 30px;
+  width: 700px;
+  height: 450px;
+  left:1000px; 
+  top:100px; 
+  position:relative;
+}
+
+/*class with specific properties for certain images*/
+.image2 {
+  width: 400px;
+  height: 200px;
+  left:750px; 
+  top:0px; 
+  position:relative;
+}
+
+/*class that allows one to overlay text onto the bottom-left of an image*/
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 50;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+

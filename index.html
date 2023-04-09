@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.5.0/dist/ml5.min.js"></script>
+    <script src="script.js"></script>   
+
+<!---Styling for button groups 1 and 2; specifies position, color, border, text-alignment, font-size, opacity, etc. --->
+<style>
+
+.buttons{
+  position: relative;
+}
+.row{
+  display:flex;
+}
+.btn-group{
+    position: absolute;
+    left:25px;
+    top:825px;
+}
+  
+.btn-group button {
+  background-color: white;
+  border: none;
+  color: #FF4040;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
+  margin: 4px 2px;
+  opacity: 0.75;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:hover {opacity: 1}
+
+buttons{
+  position: relative;
+}
+.row{
+  display:flex;
+}
+.btn-group2{
+    position: absolute;
+    left:600px;
+    top:225px;
+}
+  
+.btn-group2 button {
+  background-color: white;
+  border: none;
+  color: #FF4040;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 12px;
+  font-family: sans-serif;
+  margin: 4px 2px;
+  opacity: 0.75;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.btn-group2:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  
+.btn-group2 button:hover {opacity: 1}
+
+</style>
+
+<!---Creates two button groups containing button elements that link to different websites containing tutorials on what the different parts of a PC are or how to assemble a PC --->
+<body>
+<div class="btn-group" style="width:100%">
+  <button onclick="window.location='https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html';"">GPU Definition</button>
+  <button onclick="window.location='https://www.digitaltrends.com/computing/what-is-a-cpu/';"">CPU Definition</button>
+  <button onclick="window.location='https://www.lifewire.com/power-supply-unit-2618158';"">PSU Definition</button>
+  <button onclick="window.location='https://www.digitaltrends.com/computing/what-is-a-motherboard/';"">Motherboard Definition</button>
+  <button onclick="window.location='https://www.pcmag.com/encyclopedia/term/cpu-cooler';"">CPU Cooler Definition</button>
+  <button onclick="window.location='https://www.techwalla.com/articles/what-is-the-fan-function-in-a-computer';"">Cooling Fan Definition</button>
+  <button onclick="window.location='https://www.crucial.com/articles/about-memory/support-what-does-computer-memory-do';"">RAM Definition</button>
+  <button onclick="window.location='https://www.pcmag.com/news/ssd-vs-hdd-whats-the-difference';"">SSD/HDD Definition</button>
+  <button onclick="window.location='https://www.lifewire.com/what-is-a-computer-case-2618149';"">Case Definition</button>
+  <button onclick="window.location='https://www.computerhope.com/jargon/i/inputdev.htm';"">Input Devices Definition</button>
+  <button onclick="window.location='https://www.lifewire.com/what-is-a-monitor-2618155';"">Monitor Definition</button>
+</div> 
+
+<div class="btn-group2" style="width:100%">
+  <button onclick="window.location='https://www.neweggbusiness.com/smartbuyer/over-easy/building-a-pc-part-by-part-guide-part-2/';"">Build Tutorial - Website</button>
+  <button onclick="window.location='https://www.youtube.com/watch?v=PXaLc9AYIcg';"">Build Tutorial - Video</button>
+  <button onclick="window.location='https://pcpartpicker.com';"">PC Part Picker</button>
+  <button onclick="window.location='https://store.steampowered.com/app/621060/PC_Building_Simulator/';"">PC Building Simulator</button>
+</div> 
+
+<!---Header that contains an image of the logo and the tagline --->
+<header>
+  <div class="image2">
+    <img id="img" src="computervision logo/whitelogo.png"/>
+    <div class="bottom-left">The World's First Image Recognition Software For Computer Parts & PC Build Tutorial Hub</div>
+  </div>
+</header>
+
+  <!---Creates an image object that changes based on the classification made by the ML model --->  
+ <img id="img_main" src="images/background.jpg" class = "image1">
+  
+</html>
+
+
+
