@@ -2,4 +2,4 @@ ComputerVision: Designed and developed the “ComputerVision” application that
 - Wrote a Javascript program that changes the text and image based on the computer part classified by the machine learning model.
 - Wrote HTML and CSS code to specify the look of the application.
 - Created a machine learning model that is composed of different classes for each different computer part that classifies what it sees as a specific computer part.
-- Website Link: https://replit.com/join/jgbrvmodbi-armaanagrawal25
+- Website: https://replit.com/join/jgbrvmodbi-armaanagrawal25
